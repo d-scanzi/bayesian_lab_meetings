@@ -1,1 +1,1 @@
-Material for a series of tutorials on Bayesian data analysis and modelling. Tutorials are held as lab meetings for the Cognitive Psychophysiology Lab in the School of Psychology and the University of Auckland.
+Material for a series of tutorials on Bayesian data analysis and modelling. Tutorials are held as lab meetings for the Cognitive Psychophysiology Lab in the School of Psychology at the University of Auckland.
