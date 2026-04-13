@@ -37,4 +37,4 @@ aphantasia_model |>
     facet_wrap(~component,  scales = "free") +
     theme_minimal()
 
-# 
+## Bayesian update
