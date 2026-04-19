@@ -11,8 +11,8 @@ possible_aphantasia_in_population <- seq(from=0, to=1, by=0.01)
 # 2. Compute the probability of the sample at each point in the grid (Likelihood)
 probability_sample <- dbinom(people_with_aphantasia, size = sample_size, prob = possible_aphantasia_in_population)
 # 3. Solve Bayes theorem
-# aphantasia_prior <- rep(1, length(possible_aphantasia_in_population))
-aphantasia_prior <- dbeta(possible_aphantasia_in_population, shape1 = 1, shape2 = 5)
+aphantasia_prior <- rep(1, length(possible_aphantasia_in_population))
+# aphantasia_prior <- dbeta(possible_aphantasia_in_population, shape1 = 1, shape2 = 5)
 aphantasia_posterior_raw <- probability_sample * aphantasia_prior
 aphantasia_posterior_corrected <- aphantasia_posterior_raw / sum(aphantasia_posterior_raw)
 
@@ -36,5 +36,3 @@ aphantasia_model |>
     geom_line() +
     facet_wrap(~component,  scales = "free") +
     theme_minimal()
-
-## Bayesian update
